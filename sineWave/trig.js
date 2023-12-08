@@ -5,9 +5,10 @@ window.onload = function(){
     height = canvas.height = window.innerHeight;
 
     context.translate(0, height / 2);
+    //flips Y axis to print properly
     context.scale(1, -1);
 
-
+// plotting the points
     for (let angle = 0; angle < Math.PI * 2; angle += .01) {
         console.log(Math.sin(angle));
         let x = angle * 200,
