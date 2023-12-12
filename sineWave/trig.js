@@ -8,7 +8,7 @@ window.onload = function(){
     //flips Y axis to print properly
     context.scale(1, -1);
 
-// plotting the points
+// plotting the points - drawing the wave
     for (let angle = 0; angle < Math.PI * 2; angle += .01) {
         console.log(Math.sin(angle));
         let x = angle * 200,
